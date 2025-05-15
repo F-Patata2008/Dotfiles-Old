@@ -1,0 +1,163 @@
+[{
+	"name" : "Top",
+	"position": "Top",
+	"margin": "7 7 0 7",
+	"modules-left": ["custom/pacman","cpu", "memory"],
+	"modules-center": ["custom/media"],
+	"modules-right": ["tray","pulseaudio", "backlight","network", "clock","battery"],
+    "reload_style_on_change": true,
+
+
+
+	"tray" : {
+		"icon-size" : 15,
+		"spacing" : 10
+	},
+	"custom/media": {
+		"format": "{icon} {}",
+		"escape": true,
+		"return-type": "json",
+		"max-length": 40,
+		"on-click": "playerctl play-pause",
+		"on-click-right": "playerctl stop",
+		"smooth-scrolling-threshold": 10, // This value was tested using a trackpad, it should be lowered if using a mouse.
+		"on-scroll-up": "playerctl next",
+		"on-scroll-down": "playerctl previous",
+		"exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources/custom_modules folder
+	},
+
+	"custom/pacman" : {
+		"format": "{}  ",
+		"interval": 3600,                     			// every 1/4 hour
+		"exec": "(checkupdates;pacman -Qm | aur vercmp) | wc -l",	// # of updates
+		"exec-if": "exit 0",                  			// always run; consider advanced run conditions
+		"on-click": "foot sh -c 'yay; echo Done - Press enter to exit; read'; pkill -SIGRTMIN+8 waybar", // update system
+		"on-click-middle": "(checkupdates;pacman -Qm | aur vercmp) | wc -l", // update system
+		"signal": 8,
+		"tooltip": false	
+	},
+
+    "memory": {
+        "format": " {percentage}%"
+    },
+
+	"pulseaudio": {
+	   "scroll-step": 2, // %, can be a float
+	   "reverse-scrolling": 1,
+	   "format": "{volume}% {icon}",
+	   "format-bluetooth": "{volume}% {icon} ",
+	   "format-bluetooth-muted": "  {icon} ",
+	   "format-muted": "  ",
+	   "format-source": "",
+	   "format-source-muted": "",
+	   "format-icons": {
+	 		 "headphone": "",
+	 		 "hands-free": "󱥋 ",
+			 "headset": "󰋎 ",
+			 "phone": "",
+			 "portable": "", 
+			 "car": "",
+			 "default": [" ", "  ", " "]
+	  },
+	  "on-click": "pavucontrol",
+	  "min-length": 5
+	},
+
+	"cpu" : {
+		"format" : " {usage}%"
+	},
+	"clock": {
+		"format" : "  {:%H:%M}",
+		"rotate": 0,
+		"format-alt": "{  %d·%m·%y}",
+		"tooltip-format": "<span>{calendar}</span>",
+		"calendar": {
+			"mode": "month",
+			"format": {
+				"months": "<span color='#ff6699'><b>{}</b></span>",
+				"days": "<span color='#cdd6f4'><b>{}</b></span>",
+				"weekdays": "<span color='#7CD37C'><b>{}</b></span>",
+				"today": "<span color='#ffcc66'><b>{}</b></span>"
+			}
+		}
+	},
+    "battery": {
+        	"states": {
+            		"warning": 30,
+            		"critical": 15
+        	},
+        	"format": "{icon} {capacity}%",
+        	"format-charging": "󰂄 {capacity}%",
+        	"format-plugged": "󰁹{capacity}%",
+        	//"format-alt": "{time} {icon}",
+        	"format-full": "󱟢  {capacity}%",
+        	"format-icons": ["󱡂 "]
+
+	},
+    "network": {
+        "interface": "wlo1",
+		"tooltip": true,
+        "interval": 3,
+        "format": "{ifname}",
+        "format-wifi": "  {essid} ({signalStrength}%)",
+        "format-ethernet": " ",
+        "format-disconnected": "", //An empty format will hide the module.
+        "tooltip-format": "{ifname} via {gwaddr} 󰊗",
+        "tooltip-format-wifi": " {essid} ({signalStrength}%)",
+        "tooltip-format-ethernet": "{ifname} ",
+        "tooltip-format-disconnected": "Disconnected",
+       	"format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>"
+        	
+
+    },
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{percent}% {icon}",
+        "format-icons": ["", ""]
+    }
+},
+{
+	"name" : "Left",
+	"position": "left",
+	"modules-left": ["wlr/taskbar", "custom/appmenu"],
+	"modules-right" : ["hyprland/workspaces"],
+	"margin": "0 0 7 0",
+
+
+	"custom/appmenu": {
+        	"format": "{icon}",
+        	"format-icon": "",
+        	"rotate": 90,
+        	"on-click": "~/.config/waybar/runwofi.sh"
+	},
+	"wlr/taskbar": {
+		"format": "{icon}",
+		"tooltip": true,
+		"tooltip-format": "{title}",
+		"on-click": "activate",
+		"on-click-middle": "close",
+		"active-first": true,
+		"rotate": 90
+	},
+
+	"hyprland/workspaces": {
+		"format": "{icon}",
+		"format-icons": {
+			"1": " ",
+			"2": " ",
+			"3": " ",
+			"4": " ",
+			"5": " ",
+			"6": " ",
+			"7": " ",
+			"8": " ",
+			"9": " ",
+			"10": "   "
+		},
+
+		"persistent-workspaces": {
+			"eDP-1" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+            "HDMI-A-1" : [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+		}
+	}
+}]
