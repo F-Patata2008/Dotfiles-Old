@@ -7,8 +7,8 @@ Incluye configuraciones de:
 - Neovim
 - Kitty
 - Hyprland
-    -- Hyprpaper
-    -- Hyprland
-    -- Hyprlock
-    -- Hypridle
-    -- Hyprshot
+    - Hyprpaper
+    - Hyprland
+    - Hyprlock
+    - Hypridle
+    - Hyprshot
