@@ -12,3 +12,4 @@ Incluye configuraciones de:
     - Hyprlock
     - Hypridle
     - Hyprshot
+    - Waybar
