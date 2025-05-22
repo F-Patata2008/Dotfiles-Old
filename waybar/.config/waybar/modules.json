@@ -59,13 +59,7 @@
         "format": "  {}%",
 	"tooltip": true
     },
-    "temperature": {
-        "interval": 10,
-        "hwmon-path": "/sys/devices/platform/coretemp.0/hwmon/hwmon4/temp1_input",
-        "critical-threshold": 100,
-        "format-critical": " {temperatureC}",
-        "format": " {temperatureC}°C"
-    },
+
     "hyprland/language": {
        "format": "  {}",
        "format-en": "EN",
