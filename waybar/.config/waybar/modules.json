@@ -2,7 +2,8 @@
     "custom/arch": {
         "format": "󰣇",
         "tooltip": true,
-        "tooltip-format": "btw"
+        "tooltip-format": "btw",
+        "on-click": "sh /home/fpatata/.config/rofi/launchers/type-3/launcher.sh"
     },
 
 
@@ -75,7 +76,8 @@
         "format-charging": "  {capacity}%",
         "format-plugged": "  {capacity}%",
         "format-alt": "{time}  {icon}",
-        "format-icons": ["", "", "", "", ""]
+        "format-icons": ["", "", "", "", ""],
+        "on-click": "sh /home/fpatata/.config/rofi/powermenu/type-1/powermenu.sh",
     },
     "battery#bat2": {
         "bat": "BAT2"
