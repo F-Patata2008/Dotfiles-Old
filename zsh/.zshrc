@@ -12,6 +12,8 @@ fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+# Edit .zshrc and add this line
+export PATH=$HOME/.config/rofi/scripts:$PATH
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time Oh My Zsh is loaded, in which case,
