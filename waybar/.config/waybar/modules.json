@@ -3,7 +3,7 @@
         "format": "󰣇",
         "tooltip": true,
         "tooltip-format": "btw",
-        "on-click": "sh /home/fpatata/.config/rofi/launchers/type-3/launcher.sh"
+        "on-click": "sh /home/fpatata/dotfiles/rofi/.config/rofi/launchers/type-3/launcher.sh"
     },
 
 
@@ -54,11 +54,13 @@
     },
     "cpu": {
         "format": "  {usage}%",
-        "tooltip": true
+        "tooltip": true,
+        "on-click": gnome-system-monitor
     },
     "memory": {
         "format": "  {}%",
-	"tooltip": true
+    	"tooltip": true,
+        "on-click": gnome-system-monitor
     },
 
     "hyprland/language": {
@@ -77,7 +79,7 @@
         "format-plugged": "  {capacity}%",
         "format-alt": "{time}  {icon}",
         "format-icons": ["", "", "", "", ""],
-        "on-click": "sh /home/fpatata/.config/rofi/powermenu/type-1/powermenu.sh",
+        "on-click": "sh /home/fpatata/dotfiles/rofi/.config/rofi/powermenu/type-1/powermenu.sh",
     },
     "battery#bat2": {
         "bat": "BAT2"
