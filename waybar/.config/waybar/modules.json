@@ -55,12 +55,12 @@
     "cpu": {
         "format": "  {usage}%",
         "tooltip": true,
-        "on-click": gnome-system-monitor
+        "on-click": "gnome-system-monitor"
     },
     "memory": {
         "format": "  {}%",
     	"tooltip": true,
-        "on-click": gnome-system-monitor
+        "on-click": "gnome-system-monitor"
     },
 
     "hyprland/language": {
