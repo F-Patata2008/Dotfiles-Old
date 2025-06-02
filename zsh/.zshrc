@@ -12,6 +12,7 @@ fi
 
 # Path to your Oh My Zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PATH="/home/fpatata/.local/share/gem/ruby/3.4.0/bin:$PATH"
 # Edit .zshrc and add this line
 export PATH=$HOME/.config/rofi/scripts:$PATH
 
