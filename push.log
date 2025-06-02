@@ -242,3 +242,10 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-02 12:39:08] ✅ Push exitoso
 ========== 2025-06-02 19:48:59 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 7e20729] Auto-commit: 2025-06-02 19:48:59
+ 4 files changed, 22 insertions(+), 4 deletions(-)
+ create mode 100644 nvim/.config/nvim/lua/plugins/luasnip.lua
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-06-02 19:48:59] ✅ Push exitoso
