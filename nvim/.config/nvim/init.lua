@@ -21,4 +21,4 @@ require("vim-options")
 require("lazy").setup("plugins", require("vim-options"))
 
 
-
+vim.opt.clipboard = "unnamedplus"
