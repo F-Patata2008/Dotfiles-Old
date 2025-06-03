@@ -46,12 +46,12 @@ return {
     -- Autocommand to switch to hardhacker for LaTeX
     {
         "nvim-lua/plenary.nvim", -- dummy dependency to inject our logic
-        config = function()
-            vim.api.nvim_create_autocmd("FileType", {
-                pattern = "tex",
-                callback = function()
-                    require("lazy").load({ plugins = { "hardhacker" } })
-                    vim.cmd("colorscheme hardhacker")
+--        config = function()
+  --          vim.api.nvim_create_autocmd("FileType", {
+    --            pattern = "tex",
+      --          callback = function()
+        --            require("lazy").load({ plugins = { "hardhacker" } })
+          --          vim.cmd("colorscheme hardhacker")
 
                     -- Make it transparent
                     --vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
@@ -62,9 +62,9 @@ return {
                     --vim.api.nvim_set_hl(0, "TelescopeBorder", { bg = "none" })
                     --vim.api.nvim_set_hl(0, "NvimTreeNormal", { bg = "none" })
                     --vim.api.nvim_set_hl(0, "EndOfBuffer", { bg = "none" })
-                end,
-            })
-        end,
+         --       end,
+           -- })
+       -- end,
     }
 }
 
