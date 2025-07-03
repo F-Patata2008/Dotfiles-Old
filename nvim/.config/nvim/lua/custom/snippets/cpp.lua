@@ -32,5 +32,30 @@ return {
       description = "CP Template (t test cases)",
     }
   ),
-}
 
+  -- New snippet "Papa" without test cases
+  s(
+    "Papa",
+    {
+      t({
+        "#include <bits/stdc++.h>",
+        "using namespace std;",
+        "#define ll long long",
+        "#define str string",
+        "#define vec vector",
+        "",
+        "int main() {",
+        "    ",
+      }),
+      i(0), -- cursor inside main
+      t({
+        "",
+        "    return 0;",
+        "}",
+      }),
+    },
+    {
+      description = "CP Template (no test cases)",
+    }
+  ),
+}

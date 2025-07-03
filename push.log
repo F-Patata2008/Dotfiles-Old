@@ -257,3 +257,13 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-06-02 20:13:16] ✅ Push exitoso
 ========== 2025-06-04 20:37:19 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 267bfd3] Auto-commit: 2025-06-04 20:37:19
+ 4 files changed, 8 insertions(+)
+ create mode 100644 3DS Backups/250606_CJF12652514_sysnand_00.bin
+ create mode 100644 3DS Backups/250606_CJF12652514_sysnand_00.bin.sha
+ create mode 100755 3DS Backups/CJF12652514_essential_00.exefs
+Haciendo push...
+[2025-06-04 20:37:19] ❌ Error al hacer push
+========== 2025-06-14 12:44:03 ==========
+========== 2025-07-03 14:11:25 ==========
