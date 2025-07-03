@@ -25,6 +25,17 @@
             "deactivated": ""
         }
     },
+    "power-profiles-daemon": {
+  "format": "{icon}",
+  "tooltip-format": "Power profile: {profile}\nDriver: {driver}",
+  "tooltip": true,
+  "format-icons": {
+    "default": "",
+    "performance": "",
+    "balanced": "",
+    "power-saver": ""
+  }
+},
     "pulseaudio": {
         "format": "{icon}  {volume}%",
         "format-bluetooth": "{icon} {volume}% ",
@@ -64,7 +75,7 @@
     },
 
     "hyprland/language": {
-       "format": "  {}",
+       "format": " {}",
        "format-en": "EN",
        "format-es": "ES"
     },
