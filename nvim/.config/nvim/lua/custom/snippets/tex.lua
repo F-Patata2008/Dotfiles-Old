@@ -5,12 +5,14 @@ local i = ls.insert_node
 local fmt = require("luasnip.extras.fmt").fmt
 
 return {
-  -- Snippet 1: Basic LaTeX article
-  s("article", fmt([[
+  -- Snippet 1: Basic LaTeX article in Spanish
+  s("Documento", fmt([[
 \documentclass[11pt]{{article}}
+\usepackage[spanish]{{babel}}
 \usepackage{{amsmath}}  % Math
 \usepackage{{amssymb}}  % Symbols
 \usepackage{{graphicx}} % Images
+\graphicspath{{ {{./images/}}}}
 \usepackage[utf8]{{inputenc}}
 \usepackage[T1]{{fontenc}}
 \usepackage[margin=1in]{{geometry}}
@@ -27,9 +29,8 @@ return {
 
 \end{{document}}
   ]], {
-    i(1, "Your Title"),
-    i(2, "Your Name"),
-    i(0, "Start writing here..."),
+    i(1, "Tu Título"),
+    i(2, "Tu Nombre"),
+    i(0, "Empieza a escribir aquí..."),
   })),
 }
-
