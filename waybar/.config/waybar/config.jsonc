@@ -19,7 +19,7 @@
         "network",
         "cpu",
         "memory", 
-        "hyprland/language",
+        //"hyprland/language",
         "battery",
         "clock"
     ],
