@@ -377,3 +377,10 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-24 11:53:20] ✅ Push exitoso
 ========== 2025-07-24 12:00:46 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 4a8560f] Auto-commit: 2025-07-24 12:00:46
+ 3 files changed, 4 insertions(+), 2 deletions(-)
+ rename nvim/.config/nvim/lua/{plugins => custom}/copilot.lua (100%)
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-24 12:00:46] ✅ Push exitoso
