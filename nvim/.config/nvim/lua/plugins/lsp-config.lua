@@ -35,6 +35,11 @@ return {
 			vim.keymap.set("n", "<space>gd", vim.lsp.buf.definition, {})
 			vim.keymap.set("n", "<space>gr", vim.lsp.buf.references, {})
 			vim.keymap.set("n", "<space>ca", vim.lsp.buf.code_action, {})
+            vim.diagnostic.config({
+                virtual_text = true,
+                signs = false,
+                underline = true,
+            })
 		end
 	}
 }
