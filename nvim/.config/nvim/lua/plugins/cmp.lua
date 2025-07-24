@@ -19,7 +19,6 @@ return {
         config = function()
             local cmp = require('cmp')
             local lspkind = require('lspkind') -- load lspkind
-
             require("luasnip.loaders.from_vscode").lazy_load()
             require("luasnip.loaders.from_lua").lazy_load({
                 paths = vim.fn.stdpath('config') .. "/lua/snippets/" 
@@ -81,13 +80,6 @@ return {
                         }
                     }),
                 },
-            })
-
-            -- LaTeX compile shortcut
-            vim.keymap.set('n', '<C-l>', '<Cmd>VimtexCompile<CR>', {
-                noremap = true,
-                silent = true,
-                desc = "Compile LaTeX (Vimtex)"
             })
         end
     }
