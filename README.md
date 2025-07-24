@@ -13,3 +13,14 @@ Incluye configuraciones de:
     - Hypridle
     - Hyprshot
     - Waybar
+
+
+## Instalación
+
+Clona el repo y aplica los symlinks:
+
+```bash
+git clone https://github.com/F-Patata2008/Dotfiles ~/Dotfiles
+cd ~/Dotfiles
+stow nvim kitty hypr waybar zsh starship
+
