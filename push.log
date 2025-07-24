@@ -344,3 +344,20 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-24 10:51:35] ✅ Push exitoso
 ========== 2025-07-24 11:15:13 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main 55897cc] Auto-commit: 2025-07-24 11:15:13
+ 14 files changed, 60 insertions(+), 15 deletions(-)
+ rename nvim/.config/nvim/lua/{plugins => core}/keymaps.lua (100%)
+ rename nvim/.config/nvim/lua/{vim-options.lua => core/options.lua} (100%)
+ create mode 100644 nvim/.config/nvim/lua/init.lua
+ rename nvim/.config/nvim/lua/plugins/{pairs.lua => autopairs.lua} (100%)
+ rename nvim/.config/nvim/lua/plugins/{complete.lua => cmp.lua} (100%)
+ rename nvim/.config/nvim/lua/plugins/{lsp-config.lua => lsp.lua} (100%)
+ rename nvim/.config/nvim/lua/plugins/{none-ls.lua => null-ls.lua} (100%)
+ rename nvim/.config/nvim/lua/plugins/{treessiter.lua => treesitter.lua} (100%)
+ rename nvim/.config/nvim/lua/{custom => }/snippets/cpp.lua (100%)
+ rename nvim/.config/nvim/lua/{custom => }/snippets/tex.lua (100%)
+ create mode 100755 nvim/.config/nvim/refarctor.sh
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-24 11:15:13] ✅ Push exitoso
