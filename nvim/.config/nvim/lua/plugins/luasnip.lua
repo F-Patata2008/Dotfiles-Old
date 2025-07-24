@@ -1,10 +1,17 @@
 return {
     {
-	"L3MON4D3/LuaSnip",
-	-- follow latest release.
-	version = "v2.*", -- Replace <CurrentMajor> by the latest released major (first number of latest release)
-	-- install jsregexp (optional!).
-	build = "make install_jsregexp"
-    -- config = function()
+        "L3MON4D3/LuaSnip",
+        version = "v2.*",
+        build = "make install_jsregexp",
+        config = function()
+            -- Cargar snippets desde lua/custom/snippets
+            require("luasnip.loaders.from_lua").lazy_load({
+                paths = vim.fn.stdpath("config") .. "/lua/custom/snippets"
+            })
+
+            -- También cargar snippets tipo vscode friendly-snippets
+            require("luasnip.loaders.from_vscode").lazy_load()
+        end,
+    }
 }
- }
+
