@@ -362,3 +362,10 @@ Haciendo push...
 branch 'main' set up to track 'origin/main'.
 [2025-07-24 11:15:13] ✅ Push exitoso
 ========== 2025-07-24 11:37:51 ==========
+Mensaje de commit (dejar vacío para 'Auto-commit'): Haciendo commit...
+[main b98d7b3] Auto-commit: 2025-07-24 11:37:51
+ 5 files changed, 41 insertions(+), 36 deletions(-)
+ delete mode 100755 nvim/.config/nvim/refarctor.sh
+Haciendo push...
+branch 'main' set up to track 'origin/main'.
+[2025-07-24 11:37:51] ✅ Push exitoso
