@@ -10,8 +10,9 @@ return {
       t({
         "#include <bits/stdc++.h>",
         "using namespace std;",
-        "#define ll long long",
-        "#define str string",
+        "",
+        "typedef long long ll;",
+        "typedef string str;",
         "#define vec vector",
         "",
         "int main() {",
@@ -29,7 +30,7 @@ return {
       }),
     },
     {
-      description = "CP Template (t test cases)",
+      description = "Competitive Programming Template (With test cases)",
     }
   ),
 
@@ -40,8 +41,9 @@ return {
       t({
         "#include <bits/stdc++.h>",
         "using namespace std;",
-        "#define ll long long",
-        "#define str string",
+        "",
+        "typedef long long ll;",
+        "typedef string str;",
         "#define vec vector",
         "",
         "int main() {",
@@ -55,7 +57,7 @@ return {
       }),
     },
     {
-      description = "CP Template (no test cases)",
+      description = "Competitive Programming Template (Without test cases)",
     }
   ),
 }

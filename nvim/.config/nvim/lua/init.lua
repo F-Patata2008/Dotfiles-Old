@@ -15,5 +15,5 @@ require("plugins.treesitter")
 require("plugins.neo-tree")
 require("plugins.autopairs")
 require("plugins.latex")
-require("plugins.copilot")
+require("custom.copilot")
 
