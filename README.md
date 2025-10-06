@@ -1,5 +1,5 @@
 # Dotfiles
-
+## Este Repositorio ya no sera mantenido, ya que correpsinde a mi antigua configuarcion de arch
 Es un respald de mis dotfiles de linux/arch, en este caso de mi laptop personal. 
 Incluye configuraciones de:
 
